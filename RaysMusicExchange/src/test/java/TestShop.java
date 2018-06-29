@@ -49,4 +49,9 @@ public class TestShop {
         shop.removeItem(piano);
         assertEquals(5, shop.getStock().size());
     }
+
+    @Test
+    public void canGetTotalProfit() {
+        assertEquals(89.94, shop.totalProfit(),0.01);
+    }
 }

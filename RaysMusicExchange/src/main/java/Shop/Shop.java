@@ -23,4 +23,12 @@ public class Shop {
     public ArrayList<ISell> getStock() {
         return stock;
     }
+
+    public double totalProfit(){
+        double total = 0;
+        for(ISell item : getStock()){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }
