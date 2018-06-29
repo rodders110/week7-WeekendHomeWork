@@ -19,4 +19,8 @@ public class Guitar extends Instrument implements IPlay {
     public String play() {
         return "Cambur pinton";
     }
+
+    public Double calculateMarkup() {
+        return this.getSellingPrice() - this.getBuyingPrice();
+    }
 }

@@ -1,6 +1,8 @@
 package Instruments;
 
-public  abstract class Instrument {
+import Behavoirs.ISell;
+
+public  abstract class Instrument implements ISell {
     private String make;
     private String model;
     private Double buyingPrice;

@@ -18,6 +18,9 @@ public class Saxophone extends Instrument implements IPlay {
     }
 
     public String play() {
-        return "";
+        return "Parrrrp";
+    }
+    public Double calculateMarkup() {
+        return this.getSellingPrice() - this.getBuyingPrice();
     }
 }

@@ -12,4 +12,7 @@ public class Piano extends Instrument implements IPlay {
     public String play() {
         return "Plink, plonk";
     }
+    public Double calculateMarkup() {
+        return this.getSellingPrice() - this.getBuyingPrice();
+    }
 }
